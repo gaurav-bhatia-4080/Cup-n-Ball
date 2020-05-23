@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+html
+{
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-size: 14px;
+  background-color: #FF851B;
+}
+body p{
+  margin: 0;
+  padding: 0;
+}
+body *{
+  outline: none;
+}
+.game-container {
+/*  position: relative;
+  width: 100%;*/
+  background-color: #FF851B;  
+  color: #FFF;
+  font-family: sans-serif;
+  text-align: center;
+  /*margin: auto;*/
+}
+
+.instructions{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 1.571em;
+  padding-top: 30px;
+  margin-bottom: 4em;
+}
+
+.shell-game{
+  position: relative;
+  width: 99%;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.cups-box{
+  position: absolute;
+  width: 788px;
+  height: 100%;
+  margin: auto;
+  margin-top: 4em;
+  left: 0; right: 0;
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  justify-content: space-around;
+
+}
+
+.cup{
+  position: absolute;
+  width: 196px;
+  height: 286px;
+  background-image: url(http://redcactus7.000webhostapp.com/assets/images/shellGame/cup.png);
+  background-repeat: no-repeat;
+  top: 50px;
+  display: block;
+}
+.cup-2{
+  left: 296px;
+}
+.cup-3{
+  left: 592px;
+}
+
+#ball{
+  position: absolute;
+  width: 155px;
+  height: 103px;
+  background-image: url(ball.png);
+  background-repeat: no-repeat;
+  left: 146px;
+  top: 256px;
+}
+
+#btnStart{
+  cursor: pointer;
+  height: 40px;
+  width: 90%;
+  max-width: 250px;
+  border: 0;
+  margin-top: 17em;
+  background-color: #151f75;
+  font-size: 1.571em;
+  line-height: 1.8em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #FFF;  
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  margin-bottom: 50px;
+}
+
+
+#message
+{
+  text-align: center;
+  
+
+}
+#message p
+{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 1.571em;
+}
+#btnRestart button{
+  
+  cursor: pointer;
+  height: 40px;
+  transition: 1s;
+  width: 90%;
+  max-width: 250px;
+  border: 0;
+  background-color: #151f75;
+  font-size: 1.571em;
+  line-height: 1.8em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #FFF;  
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  /*margin-bottom: 50px;*/
+  margin: auto;
+
+}
+
+.hide-anim
+{
+  animation: fadeOut 2s;
+}
+
+.hide
+{
+  display:none;
+}
+.show {
+    display: block;
+    animation: fadein 4s;
+    margin-top: 3em;
+}
+
+/* Reset button fadein */
+@keyframes fadein {
+  0% {
+    top: 20em;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+   0% {
+    opacity: 1;
+  }
+   100% {
+    opacity: 0;
+    display: none;
+  } 
+} 
+
+
+/*Responsive*/
+
+@media (max-width: 613px){
+
+  body
+  {
+    margin-top: 21%;
+  }
+}
+@media (max-width: 370px){
+
+  body
+  {
+    margin-top: 77%;
+  }
+}

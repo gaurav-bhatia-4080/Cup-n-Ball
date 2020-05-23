@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find the Ball</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<meta name="viewport" content="width=device-width,height=device-height initial-scale=1.0" />
+</head>
+<body>
+	<div class="game-container">
+
+	    <div class="shell-game">
+		    <div class="cups-box">
+		    	<div>
+				    <p class="instructions">
+				      Try and find the cup with the Ball...
+				    </p>
+				</div>
+		        <div id="cup1" class="cup cup-1 " data-val="1"></div>
+		        <div id="cup2" class="cup cup-2 " data-val="2"></div>
+		        <div id="cup3" class="cup cup-3 " data-val="3"></div>
+		        <div id="ball" class="show-game "></div>
+		        <div id="message" class="hide">
+		        	<p>Looks like you found where the ball was hidden</p>
+		        </div>
+		        <div id="btnRestart"  class="hide">
+		        	<button>Wanna Guess Again??</button>
+		        </div>
+		        <div>
+		        	<button id="btnStart">START</button>
+		        </div>
+		    </div>
+	    </div>
+	    
+
+	 </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script src="script.js"></script>
+
+</html>
